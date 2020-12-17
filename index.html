@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | WebTest</title>
+    <title>Unity WebGL Player | Snake_2D</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -19,20 +19,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">WebTest</div>
+        <div id="unity-build-title">Snake_2D</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebTest.loader.js";
+      var loaderUrl = buildUrl + "/Snake_2D_WebGl.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebTest.data",
-        frameworkUrl: buildUrl + "/WebTest.framework.js",
-        codeUrl: buildUrl + "/WebTest.wasm",
+        dataUrl: buildUrl + "/Snake_2D_WebGl.data",
+        frameworkUrl: buildUrl + "/Snake_2D_WebGl.framework.js",
+        codeUrl: buildUrl + "/Snake_2D_WebGl.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "WebTest",
-        productVersion: "0.1",
+        companyName: "Tobias Klingen 2020",
+        productName: "Snake_2D",
+        productVersion: "0.3",
       };
 
       var container = document.querySelector("#unity-container");
@@ -45,8 +45,8 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1024px";
+        canvas.style.height = "768px";
       }
       loadingBar.style.display = "block";
 
